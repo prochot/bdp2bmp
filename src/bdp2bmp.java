@@ -35,9 +35,8 @@ class bdp2bmp {
         System.out.println(
             "BDP2BMP - \n" + 
             "Image translator. Processes Matthews Swedot .BDP file\n" + 
-            "and outputs a bitmap image that can be viewed on a PC");
-        System.out.println(
-            "Copyright 2011 - Alex Prochot");
+            "and outputs a bitmap image that can be viewed on a PC.\n" +
+            "Copyright 2011-2014");
         System.out.println();
         
         parseBDP(fileName);
