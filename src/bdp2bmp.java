@@ -50,7 +50,7 @@ class bdp2bmp {
             ImageIO.write(image, "BMP", new File(fileNamePrefix + ".bmp"));
             System.out.println("Bitmap saved to " + fileNamePrefix + ".bmp");
         } catch (IOException e) {
-            System.err.println("Error writing image file");
+            System.out.println("Error writing image file");
         }
 
     }//main()
@@ -109,12 +109,12 @@ class bdp2bmp {
             }//end while
         }//end try
         catch (FileNotFoundException e) {
-            System.err.println("Error: File not found: " + BDPFile);
+            System.out.println("Error: File not found: " + BDPFile);
             System.exit(0);
         } 
         catch (IOException e) {
-            System.err.println("FATAL ERROR PARSING FILE.");
-            System.err.println("Formatting problem in line: " + line);
+            System.out.println("FATAL ERROR PARSING FILE.");
+            System.out.println("Formatting problem in line: " + line);
             System.exit(0);
         }
         
