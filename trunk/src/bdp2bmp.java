@@ -97,15 +97,14 @@ class bdp2bmp {
                         width = Integer.parseInt(
                                     lineElements[2].split(regex)[1]);
                         hexData = lineElements[2].split(regex)[2];
-                        map.put(lineNum, hexData);
                     } catch (NumberFormatException e) {
                         throw new IOException();
                     }
                 }//end if
                 else {
                     hexData = lineElements[2];
-                    map.put(lineNum, hexData);
                 }
+                map.put(lineNum, hexData);
             }//end while
         }//end try
         catch (FileNotFoundException e) {
